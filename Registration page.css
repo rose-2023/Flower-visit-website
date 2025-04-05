@@ -13,7 +13,7 @@ body:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(images/註冊頁面-背景設計.png);
+  background-image: url(./images/註冊頁面-背景設計.png);
   background-size: cover;
   background-position: center;
   z-index: -1;
