@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幸福花坊-購物車</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="shoping cart.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1 id="text01">幸福花坊</h1>
+        <ul>
+          <li>
+            <img
+              src="./images/幸福花坊.png"
+              alt=""
+              class="img01"
+              title="Long"
+            />
+          </li>
+          <li><a href="inendx.html" class="a01">首頁</a></li>
+          <li><a href="new.html" class="a01">最新消息</a></li>
+          <li><a href="#" class="a01">關於我們</a></li>
+          <li>
+            <img src="images/購物車.png" alt="" class="shop" />
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="a01">
+              <img src="images/使用者.png" alt="" class="shop" />
+            </a>
+            <ul class="submenu">
+              <li><a href="Logo in.html" class="a01">會員登入</a></li>
+              <li><a href="Registration page.html" class="a01">會員註冊</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="texth02">您的購物車</h2>
+    <span id="spa02"><a href="#">繼續購物</a></span>
+    <div class="text03">
+      <span id="spa03">商品</span>
+      <span>數量</span>
+      <span id="spa04">小計</span>
+      <hr class="hr02" />
+    </div>
+    <div class="shooping">
+      <img src="./images/p0.jpg" alt="" class="img02" />
+      <span id="spa05">粉色玫瑰1束</span>
+      <p id="spa06">$1450</p>
+      <hr id="hr03" />
+    </div>
+    <!-- 數量大盒子 -->
+    <div class="container">
+      <div class="leader">
+        <span id="spa07">+</span>
+        <span id="spa07">1</span>
+        <span id="spa07">-</span>
+      </div>
+      <img src="./images/remove-刪除.png" alt="" title="刪除鍵" class="img03" />
+    </div>
+
+    <div class="sum">
+      <div class="text04">
+        <span class="text05">合計</span><span>NT$1450</span>
+      </div>
+      <button class="but01">結帳</button>
+    </div>
+
+    <p class="text06">您的訂購資料</p>
+    <div class="content">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault1"
+        />
+        <label class="form-check-label" for="flexRadioDefault1">
+          需要運送地區城市(限台中市地區)
+        </label>
+      </div>
+      <!--input標籤 姓名 -->
+      <div class="inpCent">
+        <div class="row">
+          <div class="col-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="姓"
+              aria-label="First name"
+            />
+          </div>
+          <div class="col-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="名字"
+              aria-label="Last name"
+            />
+          </div>
+        </div>
+      </div>
+      <!--input標籤 地址、手機 -->
+      <div class="row">
+        <div class="col-4">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="輸入您的電子郵件"
+            aria-label="First name"
+          />
+        </div>
+        <div class="col-4">
+          <input
+            type="phone"
+            class="form-control"
+            placeholder="輸入您的電話號碼"
+            aria-label="Last name"
+          />
+        </div>
+      </div>
+      <!--地址輸入 -->
+      <div class="addressText">
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea"
+          ></textarea>
+          <label for="floatingTextarea">請輸入地址</label>
+        </div>
+      </div>
+
+      <h2 class="centerText">!!訂購注意事項:</h2>
+      <span class="textCen"
+        >運費會因為購買的數量大小而收取費用<br />
+        機車配送:20公斤 大小限制30(長)*60(寬)*40(高)<span class="textRed"
+          >$70</span
+        ><br />
+        廂型貨車配送:200公斤 大小限制100(長)*100(寬)*100(高)<span
+          class="textRed"
+          >$150</span
+        ><br />
+        廂型貨車配送:300公斤 大小限制150(長)*100(寬)*100(高)<span
+          class="textRed"
+          >$400</span
+        ><br />
+        <span id="textBlod"
+          >"運費會在當貨物送達時加進去，現在算的會是商品的總價格而不是"</span
+        ><br />
+        運費加總進去的價格哦~
+      </span>
+      <!-- 圖片、海報 -->
+      <div class="imges01">
+        <img src="images/購物車-海報1.jpg" alt="" />
+        <img src="images/購物車-海報2.jpg" alt="" />
+        <img src="images/購物車-海報3.jpg" alt="" />
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault2"
+          checked
+        />
+        <label class="form-check-label" for="flexRadioDefault2">
+          不需要運送
+        </label>
+      </div>
+    </div>
+
+    <!-- 頁尾 -->
+    <hr id="h02" />
+    <br />
+    <footer>
+      <div class="flex-item">
+        <p>公司介紹</p>
+        <p class="p01">公司規劃</p>
+        <p class="p01">公司生涯</p>
+        <p class="p01">企業責任</p>
+        <p class="p01">營業時間</p>
+      </div>
+
+      <div class="flex-item">
+        <p>連絡我們</p>
+        <div class="community">
+          <a href="https://lin.ee/0he77Om" class="p01"
+            ><img src="./images/line.png" alt=""
+          /></a>
+          <p class="p01"><img src="./images/facebook.png" alt="" /></p>
+          <p class="p01"><img src="./images/instagram.png" alt="" /></p>
+          <p class="p01"><img src="./images/youtube.png" alt="" /></p>
+        </div>
+      </div>
+      <div class="flex-item">
+        <p>付款放式</p>
+        <p class="p01">LINE Pay</p>
+        <p class="p01">現金付款</p>
+      </div>
+      <div class="flex-item">
+        <p>顧客服務</p>
+        <p class="p01">優惠兌換</p>
+        <p class="p01">貨運資訊</p>
+        <p class="p01">購買資訊</p>
+      </div>
+    </footer>
+    <p class="fot_p1">由許馨蓉所製作&copy;2023</p>
+  </body>
+</html>

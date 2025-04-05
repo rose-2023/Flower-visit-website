@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊頁面</title>
+    <link rel="stylesheet" href="Registration page.css" />
+  </head>
+
+  <body>
+    <h2 id="textH2">註冊頁面</h2>
+    <div id="fromBag"></div>
+    <div class="from">
+      <div data-prop="accountNum" class="xtx-from-item">
+        <span class="iconfont icon-shouji"></span>
+        <label for="">帳號:</label>
+        <input
+          type="text"
+          name="accountNum"
+          class="inpText"
+          placeholder="請建立帳號"
+        /><br />
+        <span class="map"></span>
+      </div>
+
+      <div data-prop="phone" class="xtx-from-item">
+        <label for="">電話:</label>
+        <input
+          type="phone"
+          name="phone"
+          class="inpText"
+          placeholder="請輸入電話"
+        /><br />
+        <span class="map"></span>
+      </div>
+
+      <label for="">短信驗證碼:</label>
+      <input
+        type="password"
+        name=""
+        class="inpText"
+        placeholder="短信驗證"
+      /><br /><br />
+      <a href="#" id="PhonePass">發送驗證碼</a><br />
+      <label for="">輸入密碼:</label>
+      <input
+        type="password"
+        name=""
+        class="inpText"
+        placeholder="請輸入密碼"
+      /><br />
+      <label for="">確認密碼:</label>
+      <input
+        type="password"
+        name=""
+        class="inpText"
+        placeholder="請確認密碼"
+      /><br /><br />
+      <input type="radio" /><span
+        >請閱讀並同意<span> <用戶服務協議> </span></span
+      >
+      <br />
+      <button class="Btn">下一步</button>
+    </div>
+
+    <!-- js區域 -->
+    <script>
+      // <!-- 驗證碼 -->
+      // 1.發送驗證碼
+      const code = document.querySelector("#PhonePass");
+      let flag = true; // 通過一個遍量來控制 節流閥
+      // 1.1點擊事件
+      code.addEventListener("click", function () {
+        if (flag) {
+          // 不能點擊第二次
+          flag = false;
+          let i = 5;
+          // 點擊完之後立馬觸發
+          code.innerHTML = `0${i}秒之後重新獲取`;
+          // 開啟定時器
+          let timerId = setInterval(function () {
+            i--;
+            code.innerHTML = `0${i}秒之後重新獲取`;
+            if (i === 0) {
+              clearInterval(timerId);
+              // 重新獲取
+              code.innerHTML = `重新獲取`;
+              // 到時間了，可以開啟flag
+              flag = true;
+            }
+          }, 1000);
+        }
+      });
+
+      // 帳號
+      // 2.1獲取用戶選單
+      const accountNum = document.querySelector("[name=accountNum]");
+      // 2.2使用change事件 發生變化的時候
+      accountNum.addEventListener("change", verifyName);
+      // 2.3封裝verifName函數
+      function verifyName() {
+        const span = document.querySelector(".map");
+        // const span = accountNum.nextElementSibling
+        // 2.4 定規則 帳戶名稱
+        const reg = /^[a-zA-Z0-9-_]{6,10}$/;
+        if (!reg.test(accountNum.value)) {
+          span.innerText = "輸入不合法，請輸入6~10英文或數字";
+          return false;
+        }
+        // 2.5合法的 就清空span
+        span.innerText = "";
+        return true;
+      }
+
+      // 電話
+      // 3.驗證的是手機號
+      // 3.1獲取手機表單
+      const phone = document.querySelector("[name=phone]");
+      // 3.2使用change事件 值發生變化的時候
+      phone.addEventListener("change", verifyPhone);
+      // 3.3封裝verifyPhone函數
+      function verifyPhone() {
+        // const span = phone.nextElementSibling
+        const span = document.querySelector(".map");
+        // console.log(11)
+        // 3.4 定規則 用戶名
+        const reg = /^09[0-9]{8}$/;
+        if (!reg.test(phone.value)) {
+          // console.log(11)
+          span.innerText = "輸入不合法，請輸入正確的手機號碼";
+          return false;
+        }
+        // 3.5 合法的 就清空span
+        span.innerText = "";
+        return true;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+#h2Text{
+   text-align: center;
+   margin-top: 50px;
+   font-weight: bold;
+   text-shadow: 1px 1px 2px grey;
+}
+#fromBag2{
+   position: relative;
+   width: 30%;
+   height: 400px;
+   background-color: transparent;
+   box-shadow: 10px 2px 2px 2px rgba(0, 0, 0, .2);
+   border: 2px solid white;
+   margin: auto;
+   backdrop-filter: blur(8px);
+   border-radius: 25px;
+   top: 30px;
+   display: flex;
+}
+.from_2{
+   position: relative;
+   margin: auto;
+   width: 30%;
+   height: 400px;
+   top: -455px;
+   text-align: right;
+}
+.form_input02 {
+   position: relative;
+   top: 20px;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   width: 90%;
+   height: 40px;
+   margin-left: 10px;
+   
+}
+.span_Text{
+   /* border-bottom: 1px solid #507C85; */
+   /* padding-bottom: 5px; */
+   display: block;
+   margin-top: 100px;
+   font-size: 20px;
+   margin-left: 40px;
+
+}
+.spnText01 {
+   border-bottom: 2px solid #659799;
+   padding-bottom: 5px;
+}
+#spnText02{
+   margin-left: 20px;
+}
+.form_intext input{
+   width: 70%;
+   height: 40px;
+   margin: 5px;
+   /* margin-left: 50px; */
+}
+#form_intext01{
+   margin-top: 20px;
+}
+#formbtn{
+   width: 70%;
+   height: 35px;
+   margin: 10px;
+   background: #659799;
+   margin-left: 50px;
+   font-size: 15px;
+}
+.form_chtext a{
+   text-decoration: none;
+   margin-top: 10px;
+   margin-bottom: 50px;
+   color: #000;
+}
+#form_intext02 {
+   margin-left:50px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+/* 表單設置 */
+.from_2 input[type="text"],
+.from_2 input[type="password"]
+{
+   border: none;
+   border-bottom: 1px solid #000;
+   background-color: transparent;
+   outline: none;/* 移除点击时的边框样式 */
+   padding: 5px 0; 
+   /* 调整输入框内边距 */
+   margin: 10px; 
+   /* 调整输入框外边距 */
+   width: 50%; 
+   /* 设置输入框宽度 */
+   font-size: 16px;
+}
+a{
+   text-decoration: none;
+   color: #000;
+}
+
+.img01 {
+   width: 200px;
+   height: 200px;
+ }
+

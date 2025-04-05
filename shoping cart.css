@@ -1,0 +1,229 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: black;
+}
+a:hover{
+  color: black;
+}
+.texth02{
+  position: relative;
+  bottom: -130px;
+  text-align: center;
+  font-size: 35px;
+}
+#spa02 a{
+  color: #067966;
+  position: relative;
+  bottom: -100px;
+  float: right;
+  margin-right: 70px;
+  font-size: 18px;
+  border-bottom: 2px solid;
+  font-weight: bold;
+}
+.text03{
+  position: relative;
+  bottom: -150px;
+  text-align: center;
+  margin:30px;
+}
+#spa03{
+  position: relative;
+  right: 40%;
+}
+#spa04{
+  position: relative;
+  left: 40%;
+}
+.hr02{
+  /* margin-top: 10px; */
+  margin: 20px;
+  width: 100%;
+  color: black;
+  margin-left: auto;
+  padding-left: auto  ;
+}
+.shooping{
+  position: absolute;
+  display: inline-block;
+  width: 100%; /* 容器寬度為瀏覽器視窗寬度的80% */
+  margin: 0 auto; /* 讓容器置中 */
+  /* border: 5px solid #000;  */
+  /* 方便觀察容器範圍 */
+  padding: 20px;
+}
+.img02{
+  position: relative;
+  /* display: inline-block; */
+  width: 150px;
+  height: 150px;
+  top: 2em;
+  left: 4%;
+}
+#spa05{
+  /* text-align: center;
+  justify-content:center; */
+  position: absolute;
+  bottom: 40%;
+  left: 16%;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+  text-align: left;
+}
+.leader{
+  width: 150px;
+  height: 50px;
+  border-radius: 35%/100%; /* 水平半徑為 30%、垂直半徑為 50% */
+  border: 2px solid teal;
+  display: flex;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
+}
+#spa07{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+button{
+  border: none;
+  outline: none; /* 可以去除按下時的藍色輪廓 */
+  /* 其他樣式，如背景色、邊框顏色等 */
+  background: transparent; /* 將背景設置為透明 */
+}
+.container {
+  /* position: absolute; */
+  width: 200px;
+  height: 100px;
+  left: 41%;
+  top: 150px;
+  position: relative;
+  float: left;
+  /* 距離頂部的位置 */
+  /* left: 50px; */
+   /* 距離右側的位置 */
+}
+.addEllipse{
+  position: relative;
+  display: inline-block;
+  right: 10px;
+  bottom: 60px;
+  /* border-style: none; */
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+.removeEllipse{
+  position: relative;
+  display: inline-block;
+  left: 100px;
+  bottom: 60px;
+  font-size: 30px;
+  width: 20px;
+  height: 20px;
+}
+.img03{
+  width: 20px;
+  height: 25px;
+  position: relative;
+  left: 150px;
+  bottom: 50px;
+}
+#spa06{
+  position: absolute;
+  font-size: 20px;
+  right: 10%;
+  top: 45%;
+}
+#hr03{
+  /* position: absolute; */
+  margin:45px;
+  width: 100%;
+  margin-left: auto;
+}
+.sum{
+  position: relative;
+  float: right;
+  top: 19em;
+  right: 5%;
+  margin-bottom: 10px;
+}
+.text04{
+  position: relative;
+  display: initial;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+ 
+}
+.text05{
+  margin-right: 10px;
+}
+.but01{
+  background-color: #035144fc;
+  color: white;
+  width: 100px;
+  height: 30px;
+  float: left;
+  font-size: 16px;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-top: 10%;
+}
+.content{
+  position: relative;
+  top: 500px;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+  margin-right: 55px;
+  margin-bottom:600px;
+}
+.text06{
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  top: 500px;
+  justify-content: center;
+  align-items: center;
+  /* left: 50px; */
+  margin: auto;
+}
+.inpCent{
+  margin-bottom: 10px;
+}
+.addressText{
+  margin-top: 10px;
+  width: 680px;
+  /* height: 300px; */
+}
+.centerText{
+  font-weight: bold;
+  position: relative;
+  margin: 30px 30px;
+  left: 200px;
+}
+#textBlod{
+  font-weight: bold;
+}
+.textRed{
+  color: red;
+  font-weight: bold;
+}
+.imges01 img{
+  width: 65%;
+  height: auto;
+  margin: 10px 10px;
+}
+
