@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>幸福花訪</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1 id="text01">幸福花坊</h1>
+        <ul>
+          <li>
+            <img
+              src="./images/幸福花坊.png"
+              alt=""
+              class="img01"
+              title="Long"
+            />
+          </li>
+          <li><a href="#" class="a01">首頁</a></li>
+          <li><a href="new.html" class="a01">最新消息</a></li>
+          <li><a href="#" class="a01">關於我們</a></li>
+          <li>
+            <a href="Shoping cart.html">
+              <img src="./images/購物車.png" alt="" class="shop" />
+            </a>
+          </li>
+
+          <li class="dropdown">
+            <a href="#">
+              <img src="images/使用者.png" alt="" class="shop" />
+            </a>
+            <ul class="submenu">
+              <li><a href="Logo in.html" class="a01">會員登入</a></li>
+              <li><a href="Registration page.html" class="a01">會員註冊</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <img src="./images/網頁設計圖片01 (1).png" alt="" class="img02" />
+    </header>
+
+    <br />
+    <br />
+    <main>
+      <div id="sidebar">
+        <ul>
+          <li><a href="#">精緻花束</a></li>
+          <li><a href="#">捧花</a></li>
+          <li><a href="#">盆栽</a></li>
+          <li><a href="#">畢業花禮</a></li>
+          <li><a href="#">99朵花束</a></li>
+          <li><a href="#">花盆</a></li>
+          <li><a href="#">花籃</a></li>
+          <li><a href="#">追思花禮</a></li>
+          <li><a href="#">會場布置</a></li>
+          <li><a href="#">開幕/喬遷/展場送禮</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <div id="content">
+      <div class="content_in">
+        <a href="Product page.html">
+          <img
+            src="./images/p0.jpg"
+            class="img03"
+            alt=""
+            title="商品-精緻花束1"
+          />
+        </a>
+        <p class="text02">粉色玫瑰花束</p>
+        <hr class="h01" />
+        <p class="text02">$1450元</p>
+      </div>
+      <div class="content_in">
+        <img
+          src="./images/商品-精緻花束2.jpg"
+          class="img03"
+          alt=""
+          title="商品-精緻花束2"
+        />
+        <p class="text02">鬱金香花束</p>
+        <hr class="h01" />
+        <p class="text02">$2500元</p>
+      </div>
+      <div class="content_in">
+        <img
+          src="./images/商品-精緻花束3.jpg"
+          class="img03"
+          alt=""
+          title="商品-精緻花束3"
+        />
+        <p class="text02">百合花花束</p>
+        <hr class="h01" />
+        <p class="text02">$1700元</p>
+      </div>
+      <div class="content_in">
+        <img
+          src="./images/商品-精緻花束4.jpg"
+          class="img03"
+          alt=""
+          title="商品-精緻花束4"
+        />
+        <p class="text02">唯美百合花花束</p>
+        <hr class="h01" />
+        <p class="text02">$2000元</p>
+      </div>
+      <div class="content_in">
+        <img
+          src="./images/商品-精緻花束5.jpg"
+          class="img03"
+          alt=""
+          title="商品-精緻花束5"
+        />
+        <p class="text02">母親節花束</p>
+        <hr class="h01" />
+        <p class="text02">$2000元</p>
+      </div>
+      <div class="content_in">
+        <img
+          src="./images/商品-精緻花束6.jpg"
+          class="img03"
+          alt=""
+          title="商品-精緻花束6"
+        />
+        <p class="text02">香檳玫瑰花束</p>
+        <hr class="h01" />
+        <p class="text02">$3000元</p>
+      </div>
+      <div class="content_in">
+        <img
+          src="./images/商品-精緻花束7.jpg"
+          class="img03"
+          alt=""
+          title="商品-精緻花束7"
+        />
+        <p class="text02">滿天星花束</p>
+        <hr class="h01" />
+        <p class="text02">$1200元</p>
+      </div>
+      <div class="content_in">
+        <img
+          src="./images/商品-精緻花束8.jpg"
+          class="img03"
+          alt=""
+          title="商品-精緻花束3=8"
+        />
+        <p class="text02">紫色風華-滿天星花束</p>
+        <hr class="h01" />
+        <p class="text02">$1300元</p>
+      </div>
+      <div class="content_in">
+        <img
+          src="./images/商品-精緻花束9.jpg"
+          class="img03"
+          alt=""
+          title="商品-精緻花束9"
+        />
+        <p class="text02">私人訂製花束</p>
+        <hr class="h01" />
+        <p class="text02">$2000元</p>
+      </div>
+    </div>
+
+    <!-- js部分 -->
+
+    <div id="img004">
+      <div class="box1">x</div>
+    </div>
+    <script>
+      // 1.獲取事件源
+      const box1 = document.querySelector(".box1");
+      // // 關閉的是圖片
+      const img004 = document.querySelector("#img004");
+      // // 2.事件監聽
+      box1.addEventListener("click", function () {
+        img004.style.display = "none";
+      });
+      // DOMContentLoaded 事件监听器确保了 JavaScript
+      // 代码在所有 HTML 结构解析完毕后再执行，
+      // 从而避免了找不到元素或无法操作元素的问题。
+      document.addEventListener("DOMContentLoaded", function () {
+        // Your code here
+        // 定時器
+        // 重要:先使用封裝函數 先調用getCounTime
+        function getCounTime() {
+          // 1.得到當前的時間戳
+          const now = +new Date();
+          // 2.得到將來的時間 2023-12-24 24:00:00
+          const last = +new Date("2024-1-12 23:59:59");
+          // 3.得到剩餘的時間戳 count 記得轉換為 秒數
+          const count = (last - now) / 1000;
+          // console.log(count)
+          // 4.轉換為時分秒
+          let d = parseInt(count / 60 / 60 / 24); //計算幾天
+          d = d < 10 ? "0" + d : d;
+          let h = parseInt((count / 60 / 60) % 24); //計算小時
+          h = h < 10 ? "0" + h : h;
+          let m = parseInt((count / 60) % 60);
+          m = m < 10 ? "0" + m : m;
+          let s = parseInt(count % 60);
+          s = s < 10 ? "0" + s : s;
+          // console.log(d, h, m, s)
+          // 5.把時分秒寫到對應的盒子裡面
+          document.querySelector("#day").innerHTML = d;
+          document.querySelector("#hour").innerHTML = h;
+          document.querySelector("#minutes").innerHTML = m;
+          document.querySelector("#second").innerHTML = s;
+        }
+        getCounTime();
+        setInterval(getCounTime, 1000);
+      });
+
+      // 調用函數
+
+      // 開啟定時器
+    </script>
+    <!-- 定時器 -->
+    <div class="countdown">
+      <p class="next">今天是2023年12月28日</p>
+      <p class="title">冬季限定優惠價倒數中</p>
+      <p class="clock">
+        <span id="day">00</span>
+        <i>:</i>
+        <span id="hour">00</span>
+        <i>:</i>
+        <span id="minutes">25</span>
+        <i>:</i>
+        <span id="second">20</span>
+      </p>
+      <p class="tips">24:00:00領取優惠禮卷</p>
+    </div>
+    <!-- js部分 -->
+
+    <hr id="h02" />
+    <br />
+    <footer>
+      <div class="flex-item">
+        <p>公司介紹</p>
+        <p class="p01">公司規劃</p>
+        <p class="p01">公司生涯</p>
+        <p class="p01">企業責任</p>
+        <p class="p01">營業時間</p>
+      </div>
+
+      <div class="flex-item">
+        <p>連絡我們</p>
+        <div class="community">
+          <a href="https://lin.ee/0he77Om" class="p01"
+            ><img src="./images/line.png" alt=""
+          /></a>
+          <p class="p01"><img src="./images/facebook.png" alt="" /></p>
+          <p class="p01"><img src="./images/instagram.png" alt="" /></p>
+          <p class="p01"><img src="./images/youtube.png" alt="" /></p>
+        </div>
+      </div>
+      <div class="flex-item">
+        <p>付款放式</p>
+        <p class="p01">LINE Pay</p>
+        <p class="p01">現金付款</p>
+      </div>
+      <div class="flex-item">
+        <p>顧客服務</p>
+        <p class="p01">優惠兌換</p>
+        <p class="p01">貨運資訊</p>
+        <p class="p01">購買資訊</p>
+      </div>
+    </footer>
+    <p class="fot_p1">由許馨蓉所製作&copy;2023</p>
+  </body>
+</html>
